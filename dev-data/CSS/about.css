@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Quicksand&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+  /* color: var(--light);  */
+  transition: 0.5s;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+:root {
+  /* --light: #f6f1f1;  */
+  --light: #efeaea;
+  --light_medium: #afd3e2;
+  --dark_medium: #19a7ce;
+  --dark: #146c94;
+}
+
+img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+p {
+  font-size: large;
+  justify-content: start 5px;
+  color: var(--light);
+  padding: 20px;
+  text-align: center;
+}
+
+.dev {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 65px;
+}
+
+.devname {
+  color: var(--light);
+  font-size: x-large;
+}
+
+.devcontact {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: center;
+  border-radius: 12px;
+  background-color: var(--dark);
+  color: var(--light);
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 50px);
+  /* bottom: 5px; */
+}
+/* .darshan{
+    image-resolution: 100%;
+    position: relative;
+    color: var(--light);
+    box-shadow: 12px 15px 5px rgba(128, 128, 128, 0.308);
+    margin: 15px 15px;
+    width: 70vw;
+    padding-top: 20px;
+    background-color: var(--dark_medium);
+}
+
+.vraj{
+    image-resolution: 100%;
+    position: relative;
+    color: var(--light);
+    box-shadow: 12px 15px 5px rgba(128, 128, 128, 0.308) ;
+    margin: 15px 15px;
+    width: 70vw;
+    padding-top: 20px;
+    background-color: var(--dark_medium);
+}
+.nilesh{
+    image-resolution: 100%;
+    position: relative;
+    color: var(--light);
+    box-shadow: 12px 15px 5px rgba(128, 128, 128, 0.308);
+    margin: 15px 15px;
+    width: 70vw;
+    padding-top: 20px;
+    background-color: var(--dark_medium);
+}
+.raj{
+    image-resolution: 100%;
+    position: relative;
+    color: var(--light);
+    box-shadow: 12px 15px 5px rgba(128, 128, 128, 0.308) ;
+    border-radius: 10px;
+    margin: 15px 15px;
+    width: 70vw;
+    padding-top: 20px;
+    background-color: var(--dark_medium);
+} */
+
+.box {
+  image-resolution: 100%;
+  position: relative;
+  /* border: 2px solid var(--dark); */
+  color: var(--light);
+  box-shadow: 12px 15px 5px rgba(128, 128, 128, 0.308);
+  border-radius: 10px;
+  margin: 30px;
+  width: 70vw;
+  padding-top: 20px;
+  background-color: var(--dark);
+  height: 50vh;
+}
+
+.box img {
+  position: absolute;
+  top: -75px;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+  border: 5px solid var(--dark_medium);
+}
+
+.devname {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.fa-brands {
+  font-size: 2rem;
+  margin: 0px 10px;
+}

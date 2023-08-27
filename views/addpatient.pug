@@ -1,0 +1,114 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content="width='device-width', initial-scale=1.0")
+    title Form
+    link(rel='stylesheet' href='./CSS/style.css' type='text/css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+    link(rel='stylesheet' href='./CSS/details.css')
+  nav
+    i.fa-solid.fa-stethoscope
+    ul
+      li 
+        a(href='/') Home
+      li Service
+      li 
+        a(href='/contact') Contact
+      li 
+        a(href='/about') About
+    .credentials
+      button.btnSignup
+        a(href='/') Logout
+  .details--container
+    .details
+      .personalDetail
+        // <img src="cheetah.jfif" alt="">
+        table.details_table
+          tr
+            td.detail--label name
+            td.detail--data
+              input#p_name(type='text' placeholder='Enter Name Here')
+          tr
+            td.detail--label patient ID
+            td.detail--data
+              input#p_id(type='text' placeholder='Enter PatientID Here')
+          tr
+            td.detail--label age
+            td.detail--data
+              input#p_age(type='text' placeholder='AGE')
+          tr
+            td.detail--label gender
+            td.detail--data
+              select#sex(name='sex')
+                option(value='male') Male
+                option(value='female') Female
+          tr
+            td.detail--label admit date
+            td.detail--data
+              input#p_date(type='date')
+          tr
+            td.detail--label bed Number
+            td.detail--data
+              input#p_bed(type='text' placeholder='Bed Number')
+          tr
+            td.detail--label mobile
+            td.detail--data
+              input#p_phone(type='text' placeholder='10 digits only')
+          tr
+            td.detail--label blood Group
+            td.detail--data
+              input#p_blood(type='text' placeholder=' ex. O+ ')
+        button#submit.submitbutton(type='submit') 
+          a(href='/getAllPatients') Add Patient
+      .medicalDetail
+        .disease
+          .label DISEASE
+          div
+            input#disease(type='text' placeholder='Enter Disease Here')
+        .health
+          .label HEALTH
+          table.health--table
+            tr.health--odd
+              td Heart beat
+              td
+                input#heartBeat(type='text' name='Heart_Beat'  placeholder='Heart Beat')
+            tr.health--even
+              td
+                | SP O
+                sub 2
+              td
+                input#SPO2(type='text' name='SPO2'  placeholder='SPO2')
+            tr.health--odd
+              td BP
+              td
+                input#BP(type='text' name='BP' placeholder='Blood Pressure')
+            tr.health--even
+              td Body Temp
+              td
+                input#bodyTemp(type='text' name='Body Temp'  placeholder='Body Temp')
+        .medicine
+          .label MEDICINE
+          .table--container
+            table.medicine--table
+              tr
+                td.medicine--data
+                  input.medicine--time(type='text' name='medicine-data' placeholder='enter time')
+                td.medicine--lable
+                  input.medicine--task(type='text' name='Medicine' placeholder='Enter task Here')
+                //- td.medicine--isDone
+                //-   input#isDone(type='checkbox' name='isDone')
+          button.medicine--add Add
+        .treatments
+          .label TREATMENTS 
+          .label.reportLabel REPORT
+          table.treatments--table
+            tr
+              td
+                input#treatment(type='text' name='Treatment'  placeholder='Enter Treatment Here...!')
+              td 
+                input(type='file' name='report' id='report')
+        
+  // <script src="PatientData.js "></script>
+  script(src='./JS/addPatient.js')

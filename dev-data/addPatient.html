@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/details.css" />
+  </head>
+
+  <body>
+    <nav>
+      <i class="fa-solid fa-stethoscope"></i>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+      <div class="credentials">
+        <!-- <button class="btnLogin">Login</button>
+          <button class="btnSignup">Sign Up</button> -->
+        <button class="btnSignup"><a href="./login.html">LOGIN</a></button>
+      </div>
+    </nav>
+    <div class="details--container">
+      <div class="details">
+        <div class="personalDetail">
+          <!-- <img src="cheetah.jfif" alt=""> -->
+          <table class="details_table">
+            <tr>
+              <td class="detail--label">name</td>
+              <td class="detail--data">
+                <input type="text" id="p_name" placeholder="Enter Name Here" />
+              </td>
+            </tr>
+            <tr>
+              <td class="detail--label">patient ID</td>
+              <td class="detail--data">
+                <input
+                  type="text"
+                  id="p_id"
+                  placeholder="Enter PatientID Here"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="detail--label">age</td>
+              <td class="detail--data">
+                <input type="text" id="p_age" placeholder="AGE" />
+              </td>
+            </tr>
+            <tr>
+              <td class="detail--label">sex</td>
+              <td class="detail--data">
+                <select name="sex" id="sex">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="detail--label">admit date</td>
+              <td class="detail--data"><input type="date" id="p_date" /></td>
+            </tr>
+            <tr>
+              <td class="detail--label">bed Number</td>
+              <td class="detail--data">
+                <input type="text" id="p_bed" placeholder="Bed Number" />
+              </td>
+            </tr>
+            <tr>
+              <td class="detail--label">mobile</td>
+              <td class="detail--data">
+                <input type="text" id="p_phone" placeholder="10 digits only" />
+              </td>
+            </tr>
+            <tr>
+              <td class="detail--label">blood Group</td>
+              <td class="detail--data">
+                <input type="text" id="p_blood" placeholder=" ex. O+ " />
+              </td>
+            </tr>
+          </table>
+          <input
+            type="submit"
+            value="add Patient"
+            id="submit"
+            class="submitbutton"
+          />
+        </div>
+        <div class="medicalDetail">
+          <div class="disease">
+            <div class="label">DISEASE</div>
+            <div><input type="text" placeholder="Enter Disease Here" /></div>
+          </div>
+          <div class="health">
+            <div class="label">HEALTH</div>
+            <table class="health--table">
+              <tr class="health--odd">
+                <td>Heart beat</td>
+                <td>
+                  <input
+                    type="text"
+                    name="Heart_Beat"
+                    id=""
+                    placeholder="Heart Beat"
+                  />
+                </td>
+              </tr>
+              <tr class="health--even">
+                <td>SP O<sub>2</sub></td>
+                <td>
+                  <input type="text" name="SPO2" id="" placeholder="SPO2" />
+                </td>
+              </tr>
+              <tr class="health--odd">
+                <td>BP</td>
+                <td>
+                  <input type="text" name="BP" placeholder="Blood Pressure" />
+                </td>
+              </tr>
+              <tr class="health--even">
+                <td>Body Temp</td>
+                <td>
+                  <input
+                    type="text"
+                    name="Body Temp"
+                    id=""
+                    placeholder="Body Temp"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="medicine">
+            <div class="label">MEDICINE</div>
+            <div class="table--container">
+              <table class="medicine--table">
+                <tr>
+                  <td class="medicine--time">
+                    <input
+                      type="text"
+                      name="medicine-data"
+                      id="timing_field"
+                      placeholder="enter timing here!"
+                    />
+                  </td>
+                  <td class="medicine--task">
+                    <input
+                      type="text"
+                      name="Medicine"
+                      placeholder="Enter task Here"
+                    />
+                  </td>
+                  <td class="medicine--isDone">
+                    <input type="checkbox" name="isDone" id="isDone" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <button class="medicine--add">Add</button>
+          </div>
+          <div class="treatments">
+            <div class="label">TREATMENTS</div>
+            <table class="treatments--table">
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="Treatment"
+                    id=""
+                    placeholder="Enter Treatment Here...!"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="PatientData.js "></script> -->
+    <script src="./JS/form.js"></script>
+  </body>
+</html>

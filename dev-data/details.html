@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/details.css" />
+  </head>
+
+  <body>
+    <nav>
+      <i class="fa-solid fa-stethoscope"></i>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+      <div class="credentials">
+        <!-- <button class="btnLogin">Login</button>
+          <button class="btnSignup">Sign Up</button> -->
+        <button class="btnSignup"><a href="./login.html">LOGIN</a></button>
+      </div>
+    </nav>
+    <div class="details--container">
+      <div class="details">
+        <div class="personalDetail">
+          <img src="cheetah.jfif" alt="" />
+          <table class="details_table">
+            <tr>
+              <td class="detail--label">name</td>
+              <td class="detail--data">darshan</td>
+            </tr>
+            <tr>
+              <td class="detail--label">patient ID</td>
+              <td class="detail--data">123</td>
+            </tr>
+            <tr>
+              <td class="detail--label">age</td>
+              <td class="detail--data">20</td>
+            </tr>
+            <tr>
+              <td class="detail--label">sex</td>
+              <td class="detail--data">male</td>
+            </tr>
+            <tr>
+              <td class="detail--label">admit date</td>
+              <td class="detail--data">03-05-2024</td>
+            </tr>
+            <tr>
+              <td class="detail--label">bed Number</td>
+              <td class="detail--data">412</td>
+            </tr>
+            <tr>
+              <td class="detail--label">mobile</td>
+              <td class="detail--data">2002200190</td>
+            </tr>
+            <tr>
+              <td class="detail--label">blood Group</td>
+              <td class="detail--data">O+</td>
+            </tr>
+          </table>
+        </div>
+        <div class="medicalDetail">
+          <div class="disease">
+            <div class="label">DISEASE</div>
+            <span>FEVER</span>
+          </div>
+          <div class="health">
+            <div class="label">HEALTH</div>
+            <table class="health--table">
+              <tr class="health--odd">
+                <td>Heart beat</td>
+                <td>120</td>
+              </tr>
+              <tr class="health--even">
+                <td>SP O2</td>
+                <td>96</td>
+              </tr>
+              <tr class="health--odd">
+                <td>BP</td>
+                <td>111/60</td>
+              </tr>
+              <tr class="health--even">
+                <td>body Temp</td>
+                <td>95</td>
+              </tr>
+            </table>
+          </div>
+          <div class="medicine">
+            <div class="label">MEDICINE</div>
+            <table class="medicine--table">
+              <tr>
+                <td class="medicine--lable">paracetamol</td>
+                <td class="medicine--data">M-N</td>
+              </tr>
+              <tr>
+                <td class="medicine--lable">DOLO 650</td>
+                <td class="medicine--data">M-A-N</td>
+                <input type="text" />
+              </tr>
+            </table>
+          </div>
+          <div class="treatments">
+            <div class="label">TREATMENTS</div>
+            <table class="treatments--table">
+              <td>YOGA</td>
+              <td>PhysioTherapy</td>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./JS/details.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Medihub
+    link(rel='stylesheet' href='../CSS/style.css' type='text/css')
+    link(rel='stylesheet' href='../CSS/home.css' type='text/css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  nav
+    i.fa-solid.fa-stethoscope
+    ul
+      li 
+        a(href='/') Home
+      li Service
+      li 
+        a(href='/contact') Contact
+      li 
+        a(href='/about') About
+    .credentials
+      //
+        <button class="btnLogin">Login</button>
+        <button class="btnSignup">Sign Up</button>
+      // <button class="btnLogin">Login</button>
+      button.btnSignup
+        a(href='/login') Login
+  .container
+    section#home.home
+      .image
+        img(src='../img/healthPhoto2.png' alt='')
+      .content
+        h3 MEDIHUB
+        br
+        p A good health is the best wealth.
+
+  .main
+
+
+

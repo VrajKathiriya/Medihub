@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='../CSS/style.css' type='text/css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+    link(rel='stylesheet' href='../CSS/patients.css')
+    title Patients
+  // navbar of page
+  nav
+    i.fa-solid.fa-stethoscope
+    ul
+      li 
+        a(href='/') Home
+      li Service
+      li 
+        a(href='/contact') Contact
+      li 
+        a(href='/about') About
+    .credentials
+      button.btnLogout
+        a(href='/') Logout
+      
+  // patients information
+  .container
+    button#active active
+    h1 Patients Information
+    table
+      thead.thead
+        tr.theader
+          td Patient id
+          td Patient Name
+          td gender
+          td Bed No
+          td Mobile
+          td#desies Disease
+          td More Info
+          td delete
+          //- td edit
+      each patient in patients
+        tr.tbody
+          td#p_id(style='background-color:#FA9494') #{patient.patientID}
+          td#p_name(style='background-color:#FA9494') #{patient.name}
+          td#p_Sex(style='background-color:#FA9494') #{patient.gender}
+          td#p_bednumber(style='background-color:#FA9494') #{patient.bed_no}
+          td#p_Mobile(style='background-color:#FA9494') #{patient.mobile_no}
+          td#p_disease(style='background-color:#FA9494') #{patient.disease}
+          td#p_moreinfo(style='background-color:#FA9494')
+              button.viewmore
+                a(href=`/getPatient/${patient.patientID}`) View More
+          td#p_Age(style='background-color:#FA9494')
+            a.deletePatient(href=`/getAllPatients` data-id=`${patient._id}`) 
+              i.fa-solid.fa-trash
+          //- td#p_Edit
+          //-   a.editPatient( href='#' data-id=`${patient.patientID}`) 
+          //-     i.fa-solid.fa-pen-to-square
+
+
+
+      tbody#thead
+   
+  // <script src="PatientData.js"></script>
+  script(src='../JS/inActivepatients.js')

@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Quicksand&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  /* --light: #f6f1f1; */
+  --light: #efeaea;
+  --light_medium: #afd3e2;
+  --dark_medium: #19a7ce;
+  --dark: #146c94;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand';
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.details--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  /* border: 1px solid black; */
+  margin: 2.5vh;
+}
+
+.details {
+  width: 87.5vw;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10vh; */
+}
+
+.personalDetail {
+  width: 40%;
+  height: 80vh;
+  border-right: 1.5px solid var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.back {
+  width: 100px;
+  height: 30px;
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+}
+.fa-arrow-left {
+  margin-right: 5px;
+  color: var(--light);
+}
+.medicalDetail {
+  width: 60%;
+  border-left: 1.5px solid var(--dark);
+}
+
+.personalDetail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--dark);
+}
+
+.details_table {
+  width: 80%;
+  /* border: 1px solid black; */
+  table-layout: fixed;
+  border-radius: 5px;
+}
+
+.details_table td {
+  /* border: 1px solid black; */
+  width: 50%;
+  padding: 6px;
+  /* text-align: center; */
+  border-radius: 2px;
+}
+
+.detail--label {
+  color: var(--light);
+  text-transform: capitalize;
+  font-weight: 700;
+  background-color: var(--dark);
+}
+
+.detail--data {
+  background-color: var(--light);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+}
+
+.medicalDetail {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.disease {
+  width: 90%;
+  height: 10%;
+  background-color: var(--light_medium);
+  padding: 0px 10px;
+}
+
+.health {
+  width: 90%;
+  height: 25%;
+  background-color: var(--light);
+  padding: 0px 10px;
+}
+.health--table {
+  width: 80%;
+  border-radius: 5px;
+  /* border: 1px solid black; */
+}
+.health--table td {
+  border: 1px solid black;
+  width: 50%;
+  padding: 0px 6px;
+  color: var(--dark);
+  border-radius: 2px;
+}
+
+.health--odd td {
+  background-color: var(--light_medium);
+  color: black;
+}
+
+.medicine {
+  width: 90%;
+  height: 25%;
+  background-color: var(--light_medium);
+  padding: 0px 10px;
+  position: relative;
+  /* overflow-y: scroll; */
+}
+
+.table--container {
+  overflow-y: scroll;
+  height: 80%;
+  /* border: 1px solid black; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.table--container::-webkit-scrollbar {
+  display: none;
+}
+
+.medicine--table {
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 5px;
+}
+
+/* .medicine--lable
+{
+    background-color: var(--dark_medium);
+    color: var(--light);
+    font-weight: 500;
+} */
+.medicine--table td {
+  border: 1px solid var(--dark);
+  padding: 0px 6px;
+  border-radius: 2px;
+}
+.medicine--data {
+  width: 20%;
+}
+.medine--lable {
+  width: 80%;
+}
+.medicine--isDone {
+  width: 10%;
+}
+
+.medine--isDone input {
+}
+
+.medicine--add {
+  /* display: ; */
+  /* display:inline-block; */
+  width: 50px;
+  background-color: var(--light);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.treatments {
+  width: 90%;
+  height: 15%;
+  background-color: var(--light);
+  padding: 0px 10px;
+}
+.treatments--table {
+  /* width: 80%; */
+  /* border: 1px solid black; */
+  table-layout: fixed;
+  border-radius: 5px;
+}
+.treatments--table td {
+  /* border: 1px solid black; */
+  width: 20%;
+  padding: 0px 6px;
+  /* text-align: center; */
+  border-radius: 2px;
+}
+
+.label {
+  background-color: var(--dark);
+  width: 110px;
+  text-align: center;
+  color: var(--light);
+  font-weight: 600;
+  /* position: absolute; */
+  position: relative;
+  top: -20px;
+  left: -10px;
+  z-index: 100;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  /* font-weight: 600; */
+  /* padding-left: 10px; */
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  font-size: inherit;
+}
+
+.submitbutton {
+  width: 100px;
+  height: 50px;
+  background-color: var(--dark);
+  color: var(--light);
+  border-radius: 20px;
+}
+
+.reportLabel {
+  position: relative;
+  top: -40px;
+  left: 23.5vw;
+}
+
+#showReport {
+  border: none;
+  position: relative;
+  top: 0;
+  left: 5vw;
+  height: 30px;
+  width: 100px;
+  background-color: var(--dark_medium);
+  font-weight: 700;
+}
+
+#showReport:hover {
+  color: var(--light);
+  background-color: var(--dark);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.reportBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reportBox img {
+  width: 50vw;
+}

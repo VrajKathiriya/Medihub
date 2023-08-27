@@ -1,0 +1,100 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='../CSS/style.css' type='text/css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' integrity='sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+    link(rel='stylesheet' href='../CSS/details.css')
+    title Details
+  nav
+    i.fa-solid.fa-stethoscope
+    ul
+      li 
+        a(href='/') Home
+      li Service
+      li 
+        a(href='/contact') Contact
+      li 
+        a(href='/about') About
+    .credentials
+      button.btnSignup
+        a(href='/') Logout
+  .details--container
+    .details
+      .personalDetail
+        button.back(data-id=`${patient._id}`)
+          a(href='../getAllPatients')
+            i.fa-solid.fa-arrow-left
+            span save
+        img(src='../img/profile.jpg' alt='this is image')
+        table.details_table
+          tr
+            td.detail--label name
+            td.detail--data #{patient.name}
+          tr
+            td.detail--label patient ID
+            td.detail--data#patientID #{patient.patientID}
+          tr
+            td.detail--label age
+            td.detail--data #{patient.age}
+          tr
+            td.detail--label gender
+            td.detail--data #{patient.gender}
+          tr
+            td.detail--label admit date
+            td.detail--data #{patient.admitDate}
+          tr
+            td.detail--label Room Number
+            td.detail--data #{patient.room_no}
+          tr
+            td.detail--label mobile
+            td.detail--data #{patient.mobile_no}
+         
+      .medicalDetail
+        .disease
+          .label DISEASE
+          span #{patient.disease}
+        .health
+          .label HEALTH
+          table.health--table
+            tr.health--odd
+              td Heart beat
+              td
+                input#heartBeat(type='text' name='Heart_Beat'  value=`${patient.health.heartBeat}`)
+            tr.health--even
+              td
+                | SP O
+                sub 2
+              td
+                input#SPO2(type='text' name='SPO2' value=`${patient.health.SPO2}`)
+            tr.health--odd
+              td BP
+              td
+                input#BP(type='text' name='BP' value=`${patient.health.BP}`)
+            tr.health--even
+              td Body Temp
+              td
+                input#bodyTemp(type='text' name='Body Temp'  value=`${patient.health.bodyTemp}`)
+        .medicine
+          .label MEDICINE
+          .table--container
+            table.medicine--table
+              each med in patientMedicine
+                tr.medicine--data
+                  td.medicine--time #{med.time}
+                  td.medicine--task #{med.task}
+                  td.medicine--isDone
+                    input#isDone.isDone(type='checkbox' name='isDone' checked=(med.isDone===true ? 'checked' : undefiend))
+
+
+            //- tr
+            //-   td.medicine--lable DOLO 650
+            //-   td.medicine--data M-A-N
+        .treatments
+          .label TREATMENTS
+          table.treatments--table
+            td #{patient.treatments}
+          
+script(src='../JS/editPatient.js')

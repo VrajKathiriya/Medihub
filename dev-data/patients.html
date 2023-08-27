@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/patients.css" />
+    <title>Patients</title>
+  </head>
+
+  <body>
+    <!-- navbar of page -->
+
+    <nav>
+      <i class="fa-solid fa-stethoscope"></i>
+      <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ul>
+      <div class="credentials">
+        <button class="btnLogin">Login</button>
+        <button class="btnSignup">Sign Up</button>
+      </div>
+    </nav>
+
+    <!-- patients information -->
+    <div class="container">
+      <h1>Patients Info</h1>
+
+      <table>
+        <thead class="thead">
+          <tr class="theader">
+            <td>Patient id</td>
+            <td>Patient Name</td>
+            <td>Age</td>
+            <td>Sex</td>
+            <td>Allocated Room</td>
+            <td>Mobile</td>
+            <td id="desies">Desease</td>
+            <td>More Info</td>
+          </tr>
+        </thead>
+        <tbody id="thead"></tbody>
+      </table>
+      <button class="addpatient">Add Patient</button>
+    </div>
+  </body>
+  <!-- <script src="PatientData.js"></script> -->
+  <script src="./JS/patients.js"></script>
+</html>

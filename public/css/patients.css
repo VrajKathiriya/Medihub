@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Quicksand&display=swap');
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+  color: var(--light);
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+:root {
+  --light: #efeaea;
+  --light_medium: #afd3e2;
+  --dark_medium: #19a7ce;
+  --dark: #146c94;
+}
+
+table {
+  width: 80vw;
+}
+
+table,
+td,
+tr {
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  position: relative;
+}
+
+#p_id {
+  width: 5%;
+}
+
+#p_Age {
+  width: 5%;
+}
+
+#p_Sex {
+  width: 8%;
+}
+
+#p_name {
+  width: 15%;
+}
+
+#p_bednumber {
+  width: 7%;
+}
+
+#p_disease {
+  width: 12%;
+}
+
+#p_Mobile {
+  width: 13%;
+}
+
+#p_moreinfo {
+  width: 10%;
+}
+
+#p_Edit {
+  width: 5%;
+}
+
+.viewmore {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.viewmore:hover a {
+  color: rgb(91, 87, 87);
+}
+
+.thead {
+  background: var(--dark);
+  font-weight: bold;
+  font-size: large;
+  color: var(--light);
+}
+
+.tbody {
+  font-size: medium;
+  font-weight: 100;
+  color: var(--light_medium);
+}
+
+h1 {
+  color: #7b7373;
+  margin: 35px 0px;
+}
+
+/* tbody tr:nth-child(even) {
+  background: var(--dark_medium);
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--dark_medium);
+} */
+tbody tr {
+  background-color: var(--dark_medium);
+}
+.theader {
+  background: var(--dark);
+}
+
+.addpatient {
+  margin: 40px 0;
+  height: 40px;
+  width: 150px;
+  background-color: var(--dark);
+  /* font-weight: bold; */
+  font-size: larger;
+  border-radius: 50px;
+}
+
+.addpatient:hover {
+  background-color: var(--light);
+}
+.addpatient:hover a {
+  color: var(--dark);
+}
+.btnLogout {
+  font-weight: bold;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border: 0.15rem solid var(--light);
+  border-radius: 1rem;
+}
+.btnLogout:hover {
+  border-color: var(--light_medium);
+  cursor: pointer;
+}
+
+#inActive {
+  position: absolute;
+  top: 40px;
+  right: 150px;
+  border: none;
+  color: #000;
+  height: 40px;
+  width: 100px;
+  background-color: var(--light_medium);
+  border-radius: 20px;
+}
+#inActive:hover {
+  background-color: var(--dark_medium);
+  cursor: pointer;
+}
+#active {
+  position: absolute;
+  top: 40px;
+  right: 150px;
+  border: none;
+  color: #000;
+  height: 40px;
+  width: 100px;
+  background-color: var(--dark_medium);
+  border-radius: 20px;
+}
+#active:hover {
+  background-color: var(--light_medium);
+  cursor: pointer;
+}
